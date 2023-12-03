@@ -6,6 +6,11 @@ public class Nim {
         this.maxTakeAway = takeAway;
     }
 
+    public Nim() {
+        this.sticks = 13;
+        this.maxTakeAway = 3;
+    }
+
     public int getSticks() {
         return sticks;
     }
@@ -22,6 +27,20 @@ public class Nim {
     }
 
     public void setSticks(int sticksTaken) {
+        sticksLeft(sticksTaken);
+    }
+
+    // helper method
+    private void sticksLeft(int sticksTaken) {
         sticks -= sticksTaken;
+    }
+
+    public int returnLonger(String one, String two) {
+        for (int i = 1; i <= sticks; i++) {
+            for (int j = sticks; j < maxTakeAway; j--) {
+                System.out.println(j);
+            }
+        }
+        return one.compareTo(two);
     }
 }
