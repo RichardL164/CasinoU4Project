@@ -26,7 +26,7 @@ public class NimLogic {
 
             System.out.println(p1.info(1));
             if (p1.getSticks() == 0) {
-                System.out.println("You win!");
+                System.out.println("You win!!!");
                 break;
             }
 
@@ -49,7 +49,7 @@ public class NimLogic {
             System.out.print("The computer takes away " + computerTakeaway + " sticks\n");
             p1.setSticks(computerTakeaway);
             if (p1.getSticks() == 0) {
-                System.out.println("You lose!");
+                System.out.println("You lose!!!");
             }
         }
     }
